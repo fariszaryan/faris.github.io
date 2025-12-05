@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premium Apps Store – Faris Zaryan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+        body {
+            background: linear-gradient(135deg, #4a00e0, #8e2de2);
+            color: #333;
+            line-height: 1.6;
+            padding-bottom: 40px;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        header {
+            text-align: center;
+            padding: 30px 0 20px;
+            color: white;
+        }
+        header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        }
+        header p {
+            font-size: 1.05rem;
+            opacity: 0.95;
+        }
+        .whatsapp-group {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .whatsapp-link {
+            background: #25D366;
+            color: white;
+            text-decoration: none;
+            padding: 12px 28px;
+            border-radius: 30px;
+            font-weight: bold;
+            display: inline-block;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+            transition: background 0.25s;
+        }
+        .whatsapp-link:hover {
+            background: #128C7E;
+        }
+        .contact-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 25px 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+        .contact-card h2 {
+            color: #6a11cb;
+            margin-bottom: 15px;
+        }
+        .contact-card p {
+            margin: 6px 0;
+            font-size: 1.05rem;
+        }
+        .apps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 22px;
+            margin-top: 20px;
+        }
+        .app-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+            text-align: center;
+        }
+        .app-card h3 {
+            color: #6a11cb;
+            margin: 10px 0 12px;
+            font-size: 1.25rem;
+        }
+        .app-card p {
+            color: #555;
+            font-size: 0.95rem;
+            margin-bottom: 12px;
+        }
+        .price {
+            background: linear-gradient(to right, #4a00e0, #8e2de2);
+            color: white;
+            padding: 6px 16px;
+            border-radius: 20px;
+            display: inline-block;
+            font-weight: bold;
+            margin-bottom: 14px;
+        }
+        .order-btn {
+            background: #ff4757;
+            color: white;
+            border: none;
+            padding: 10px 0;
+            width: 100%;
+            border-radius: 8px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .order-btn:hover {
+            background: #ff2e43;
+        }
+        footer {
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            font-size: 0.95rem;
+        }
+        @media (max-width: 768px) {
+            .apps-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            }
+            header h1 {
+                font-size: 1.9rem;
+            }
+        }
+        @media (max-width: 480px) {
+            .apps-grid {
+                grid-template-columns: 1fr;
+            }
+            header h1 {
+                font-size: 1.7rem;
+            }
+            .container {
+                padding: 0 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 Premium Apps Store</h1>
+            <p>Every app just <strong>Rs 100</strong> — Bundle for only <strong>Rs 500</strong>!</p>
+        </header>
+
+        <div class="whatsapp-group">
+            <a href="https://chat.whatsapp.com/JEWN1ZGbG2dJc6RiNXnSFU?mode=wwt" target="_blank" class="whatsapp-link">
+                💬 Join Our Official WhatsApp Group
+            </a>
+        </div>
+
+        <div class="contact-card">
+            <h2>Contact Seller</h2>
+            <p><strong>Name:</strong> Faris Zaryan</p>
+            <p><strong>Phone:</strong> <a href="tel:03256919127" style="color:#6a11cb; text-decoration:none;">03256919127</a></p>
+            <p><strong>Email:</strong> <a href="mailto:fariszaryan@gmail.com" style="color:#6a11cb; text-decoration:none;">fariszaryan@gmail.com</a></p>
+        </div>
+
+        <div class="apps-grid">
+            <div class="app-card">
+                <h3>CapCut Pro</h3>
+                <p>No watermark, premium effects & exports</p>
+                <div class="price">Rs 100</div>
+                <button class="order-btn" onclick="order('CapCut Pro')">Order Now</button>
+            </div>
+            <div class="app-card">
+                <h3>InShot Pro</h3>
+                <p>Full video editing suite unlocked</p>
+                <div class="price">Rs 100</div>
+                <button class="order-btn" onclick="order('InShot Pro')">Order Now</button>
+            </div>
+            <div class="app-card">
+                <h3>Alight Motion Pro</h3>
+                <p>Professional motion graphics editor</p>
+                <div class="price">Rs 100</div>
+                <button class="order-btn" onclick="order('Alight Motion Pro')">Order Now</button>
+            </div>
+            <div class="app-card">
+                <h3>MovieBox Pro</h3>
+                <p>Unlimited movies & series library</p>
+                <div class="price">Rs 100</div>
+                <button class="order-btn" onclick="order('MovieBox Pro')">Order Now</button>
+            </div>
+            <div class="app-card">
+                <h3>PicsArt Pro</h3>
+                <p>All premium editing tools unlocked</p>
+                <div class="price">Rs 100</div>
+                <button class="order-btn" onclick="order('PicsArt Pro')">Order Now</button>
+            </div>
+            <div class="app-card">
+                <h3>Lightroom Pro</h3>
+                <p>Premium presets & advanced tools</p>
+                <div class="price">Rs 100</div>
+                <button class="order-btn" onclick="order('Lightroom Pro')">Order Now</button>
+            </div>
+            <div class="app-card">
+                <h3>Remini Pro</h3>
+                <p>AI photo enhancer & restorer</p>
+                <div class="price">Rs 100</div>
+                <button class="order-btn" onclick="order('Remini Pro')">Order Now</button>
+            </div>
+            <div class="app-card">
+                <h3>PlayIt Pro</h3>
+                <p>Advanced video player with extras</p>
+                <div class="price">Rs 100</div>
+                <button class="order-btn" onclick="order('PlayIt Pro')">Order Now</button>
+            </div>
+            <div class="app-card">
+                <h3>Vidmate Pro</h3>
+                <p>Download from any platform</p>
+                <div class="price">Rs 100</div>
+                <button class="order-btn" onclick="order('Vidmate Pro')">Order Now</button>
+            </div>
+            <div class="app-card">
+                <h3>YouTube Pro</h3>
+                <p>Ad-free, background play & more</p>
+                <div class="price">Rs 100</div>
+                <button class="order-btn" onclick="order('YouTube Pro')">Order Now</button>
+            </div>
+            <div class="app-card">
+                <h3>Telegram Pro</h3>
+                <p>Enhanced features & premium UI</p>
+                <div class="price">Rs 100</div>
+                <button class="order-btn" onclick="order('Telegram Pro')">Order Now</button>
+            </div>
+            <div class="app-card">
+                <h3>Terabox Pro</h3>
+                <p>Extra cloud storage & fast access</p>
+                <div class="price">Rs 100</div>
+                <button class="order-btn" onclick="order('Terabox Pro')">Order Now</button>
+            </div>
+            <div class="app-card">
+                <h3>Premium VPN</h3>
+                <p>Secure, fast & unlimited bandwidth</p>
+                <div class="price">Rs 100</div>
+                <button class="order-btn" onclick="order('Premium VPN')">Order Now</button>
+            </div>
+            <div class="app-card">
+                <h3>🌟 All Apps Bundle</h3>
+                <p>Get every pro app for one low price!</p>
+                <div class="price">Rs 500</div>
+                <button class="order-btn" onclick="order('All Apps Bundle')">Get Bundle</button>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2025 Premium Apps Store by Faris Zaryan</p>
+            <p>All apps for personal use only. Delivery via WhatsApp after payment.</p>
+            <p>
+                <a href="https://chat.whatsapp.com/JEWN1ZGbG2dJc6RiNXnSFU?mode=wwt" target="_blank" style="color: #fff; text-decoration: underline; margin-top: 8px; display: inline-block;">
+                    Join WhatsApp Group for Support & Updates
+                </a>
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        function order(appName) {
+            const msg = "Hi Faris, I'd like to order " + appName + ". Please share payment & delivery details. Thank you!";
+            const encodedMsg = encodeURIComponent(msg);
+            window.open("https://wa.me/03256919127?text=" + encodedMsg, "_blank");
+        }
+    </script>
+</body>
+</html>
+
